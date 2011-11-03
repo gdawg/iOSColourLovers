@@ -19,7 +19,7 @@
     self = [super initWithStyle:style];
     if (self) {
         self.tableView.allowsSelection = NO;
-        self.title = @"supported by colourlovers.com";
+        self.title = @"thx to colourlovers.com";
         self.palettes = nil;
     }
     return self;
@@ -30,13 +30,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [[ColourLovers instance] loadPalettes:^(NSArray *palettes) {
-        NSLog(@"received list of palettes");
+
+    // for the demo we load the new set because it's more interesting than just the top list
+    [[ColourLovers instance] loadPalettesOfType:ColourPaletteTypeNew success:^(NSArray *palettes) {
         self.palettes = palettes;
-        
         [self.tableView reloadData];
     }];
+    
+    // the following would load the top 20 instead
+    /*
+    [[ColourLovers instance] loadPalettes:^(NSArray *palettes) {
+        self.palettes = palettes;
+        [self.tableView reloadData];
+    }];
+    */
+
+    // there's also more specialised methods to do paged loads, newest etc.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

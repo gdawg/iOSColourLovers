@@ -12,6 +12,8 @@
 
 @implementation ColourLovers
 
+static const int kColourLoversDefaultPageSize = 20;
+
 // get the api object instance
 +(ColourLovers *)instance {
     static dispatch_once_t pred;
@@ -45,13 +47,48 @@
 	return [ColourLovers colorWithRGBHex:hexNum];
 }
 
+
+
 -(void) loadPalettes:(void (^)(NSArray* palettes))success {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.colourlovers.com/api/palettes/top&format=json"]];
+    [self loadPalettesOfType:ColourPaletteTypeTop success:success];
+}
+-(void) loadPalettesOfType:(ColourPaletteType)type success:(void (^)(NSArray* palettes))success {
+    [self loadPalettesOfType:type withNumber:kColourLoversDefaultPageSize andOffset:0 success:success];
+}
+-(void) loadPalettesOfType:(ColourPaletteType)type withNumber:(int)numResults andOffset:(int)offset success:(void (^)(NSArray* palettes))success {
+    NSString* urlString = @"http://www.colourlovers.com/api/palettes/";
+    switch (type) {
+        case ColourPaletteTypeTop:
+            urlString = [urlString stringByAppendingString:@"top"];
+            break;
+            
+        case ColourPaletteTypeNew:
+            urlString = [urlString stringByAppendingString:@"new"];
+            break;
+            
+        case ColourPaletteTypeRandom:
+            urlString = [urlString stringByAppendingString:@"random"];
+            break;
+            
+        default:
+            break;
+    }
+    urlString = [urlString stringByAppendingString:@"?format=json"];
+    
+    // the api only allows loading one random colour at a time, no offset
+    if (type != ColourPaletteTypeRandom) {
+        urlString = [urlString stringByAppendingFormat:@"&numResults=%d",numResults];
+        urlString = [urlString stringByAppendingFormat:@"&resultOffset=%d",offset];
+    }
+    
+    NSLog(@"loading colours at url %@",urlString);
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         NSMutableArray* parsed = [[NSMutableArray alloc] init];
         for (id node in JSON) {
             ColourPalette* palette = [[ColourPalette alloc] init];
-
+            
             // parse basic properties
             palette.remoteId = [node valueForKeyPath:@"id"];
             palette.title = [node valueForKeyPath:@"title"];
