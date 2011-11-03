@@ -8,11 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ColoursTableVc.h"
+#import "DCIntrospect.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
+@synthesize navController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,10 +21,17 @@
 
     // setup a sample list of colours controller
     ColoursTableVc* vc = [[ColoursTableVc alloc] initWithStyle:UITableViewStylePlain];
-    self.tabBarController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:vc];
 
-    self.window.rootViewController = self.tabBarController;
+    // always bet on black (quote wesley snipes)
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
+    self.navController.navigationBar.tintColor = [UIColor blackColor];
+
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
+
+    [[DCIntrospect sharedIntrospector] start];
+    
     return YES;
 }
 

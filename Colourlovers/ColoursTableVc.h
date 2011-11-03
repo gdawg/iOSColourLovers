@@ -10,4 +10,6 @@
 
 @interface ColoursTableVc : UITableViewController
 
+@property (nonatomic,strong) NSArray* palettes;
+
 @end
