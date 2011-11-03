@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		490F4EF014629312002DEF66 /* ColoursTableVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EEF14629312002DEF66 /* ColoursTableVc.m */; };
+		49FB05C31462914700CB0BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C21462914700CB0BA6 /* UIKit.framework */; };
+		49FB05C51462914700CB0BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C41462914700CB0BA6 /* Foundation.framework */; };
+		49FB05C71462914700CB0BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C61462914700CB0BA6 /* CoreGraphics.framework */; };
+		49FB05CD1462914700CB0BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49FB05CB1462914700CB0BA6 /* InfoPlist.strings */; };
+		49FB05CF1462914700CB0BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB05CE1462914700CB0BA6 /* main.m */; };
+		49FB05D31462914700CB0BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB05D21462914700CB0BA6 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		490F4EEE14629312002DEF66 /* ColoursTableVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoursTableVc.h; sourceTree = "<group>"; };
+		490F4EEF14629312002DEF66 /* ColoursTableVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursTableVc.m; sourceTree = "<group>"; };
+		49FB05BE1462914700CB0BA6 /* Colourlovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colourlovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FB05C21462914700CB0BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49FB05C41462914700CB0BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49FB05C61462914700CB0BA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49FB05CA1462914700CB0BA6 /* Colourlovers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colourlovers-Info.plist"; sourceTree = "<group>"; };
+		49FB05CC1462914700CB0BA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49FB05CE1462914700CB0BA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49FB05D01462914700CB0BA6 /* Colourlovers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colourlovers-Prefix.pch"; sourceTree = "<group>"; };
+		49FB05D11462914700CB0BA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49FB05D21462914700CB0BA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FB05BB1462914700CB0BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FB05C31462914700CB0BA6 /* UIKit.framework in Frameworks */,
+				49FB05C51462914700CB0BA6 /* Foundation.framework in Frameworks */,
+				49FB05C71462914700CB0BA6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49FB05B31462914700CB0BA6 = {
+			isa = PBXGroup;
+			children = (
+				49FB05C81462914700CB0BA6 /* Colourlovers */,
+				49FB05C11462914700CB0BA6 /* Frameworks */,
+				49FB05BF1462914700CB0BA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49FB05BF1462914700CB0BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FB05BE1462914700CB0BA6 /* Colourlovers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FB05C11462914700CB0BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49FB05C21462914700CB0BA6 /* UIKit.framework */,
+				49FB05C41462914700CB0BA6 /* Foundation.framework */,
+				49FB05C61462914700CB0BA6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49FB05C81462914700CB0BA6 /* Colourlovers */ = {
+			isa = PBXGroup;
+			children = (
+				49FB05D11462914700CB0BA6 /* AppDelegate.h */,
+				49FB05D21462914700CB0BA6 /* AppDelegate.m */,
+				490F4EEE14629312002DEF66 /* ColoursTableVc.h */,
+				490F4EEF14629312002DEF66 /* ColoursTableVc.m */,
+				49FB05C91462914700CB0BA6 /* Supporting Files */,
+			);
+			path = Colourlovers;
+			sourceTree = "<group>";
+		};
+		49FB05C91462914700CB0BA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49FB05CA1462914700CB0BA6 /* Colourlovers-Info.plist */,
+				49FB05CB1462914700CB0BA6 /* InfoPlist.strings */,
+				49FB05CE1462914700CB0BA6 /* main.m */,
+				49FB05D01462914700CB0BA6 /* Colourlovers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FB05BD1462914700CB0BA6 /* Colourlovers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FB05F01462914700CB0BA6 /* Build configuration list for PBXNativeTarget "Colourlovers" */;
+			buildPhases = (
+				49FB05BA1462914700CB0BA6 /* Sources */,
+				49FB05BB1462914700CB0BA6 /* Frameworks */,
+				49FB05BC1462914700CB0BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Colourlovers;
+			productName = Colourlovers;
+			productReference = 49FB05BE1462914700CB0BA6 /* Colourlovers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FB05B51462914700CB0BA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 49FB05B81462914700CB0BA6 /* Build configuration list for PBXProject "Colourlovers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49FB05B31462914700CB0BA6;
+			productRefGroup = 49FB05BF1462914700CB0BA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FB05BD1462914700CB0BA6 /* Colourlovers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FB05BC1462914700CB0BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FB05CD1462914700CB0BA6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FB05BA1462914700CB0BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FB05CF1462914700CB0BA6 /* main.m in Sources */,
+				49FB05D31462914700CB0BA6 /* AppDelegate.m in Sources */,
+				490F4EF014629312002DEF66 /* ColoursTableVc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49FB05CB1462914700CB0BA6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FB05CC1462914700CB0BA6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49FB05EE1462914700CB0BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49FB05EF1462914700CB0BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49FB05F11462914700CB0BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colourlovers/Colourlovers-Prefix.pch";
+				INFOPLIST_FILE = "Colourlovers/Colourlovers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49FB05F21462914700CB0BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colourlovers/Colourlovers-Prefix.pch";
+				INFOPLIST_FILE = "Colourlovers/Colourlovers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FB05B81462914700CB0BA6 /* Build configuration list for PBXProject "Colourlovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FB05EE1462914700CB0BA6 /* Debug */,
+				49FB05EF1462914700CB0BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FB05F01462914700CB0BA6 /* Build configuration list for PBXNativeTarget "Colourlovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FB05F11462914700CB0BA6 /* Debug */,
+				49FB05F21462914700CB0BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FB05B51462914700CB0BA6 /* Project object */;
+}
