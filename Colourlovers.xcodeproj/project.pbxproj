@@ -27,6 +27,9 @@
 		490F4F2B14629F84002DEF66 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4F2814629F84002DEF66 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		490F4F311462A260002DEF66 /* ColourLovers.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4F301462A260002DEF66 /* ColourLovers.m */; };
 		490F4F341462A2ED002DEF66 /* ColourPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4F331462A2ED002DEF66 /* ColourPalette.m */; };
+		490F4F3E1462B80F002DEF66 /* colourLoversIcon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 490F4F3D1462B80E002DEF66 /* colourLoversIcon-57x57.png */; };
+		490F4F401462B814002DEF66 /* colourLoversIcon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 490F4F3F1462B814002DEF66 /* colourLoversIcon-114x114.png */; };
+		49C4A6A41463C4F4003B83CE /* ColourPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C4A6A31463C4F4003B83CE /* ColourPaletteView.m */; };
 		49FB05C31462914700CB0BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C21462914700CB0BA6 /* UIKit.framework */; };
 		49FB05C51462914700CB0BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C41462914700CB0BA6 /* Foundation.framework */; };
 		49FB05C71462914700CB0BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FB05C61462914700CB0BA6 /* CoreGraphics.framework */; };
@@ -77,6 +80,10 @@
 		490F4F301462A260002DEF66 /* ColourLovers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColourLovers.m; path = ColourLovers/ColourLovers.m; sourceTree = "<group>"; };
 		490F4F321462A2ED002DEF66 /* ColourPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColourPalette.h; path = ColourLovers/ColourPalette.h; sourceTree = "<group>"; };
 		490F4F331462A2ED002DEF66 /* ColourPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColourPalette.m; path = ColourLovers/ColourPalette.m; sourceTree = "<group>"; };
+		490F4F3D1462B80E002DEF66 /* colourLoversIcon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colourLoversIcon-57x57.png"; sourceTree = "<group>"; };
+		490F4F3F1462B814002DEF66 /* colourLoversIcon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colourLoversIcon-114x114.png"; sourceTree = "<group>"; };
+		49C4A6A21463C4F4003B83CE /* ColourPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourPaletteView.h; sourceTree = "<group>"; };
+		49C4A6A31463C4F4003B83CE /* ColourPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourPaletteView.m; sourceTree = "<group>"; };
 		49FB05BE1462914700CB0BA6 /* Colourlovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colourlovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FB05C21462914700CB0BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49FB05C41462914700CB0BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +170,12 @@
 		490F4F2D1462A232002DEF66 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				490F4EEE14629312002DEF66 /* ColoursTableVc.h */,
+				490F4EEF14629312002DEF66 /* ColoursTableVc.m */,
+				490F4EF214629502002DEF66 /* ColourPaletteCell.h */,
+				490F4EF314629502002DEF66 /* ColourPaletteCell.m */,
+				49C4A6A21463C4F4003B83CE /* ColourPaletteView.h */,
+				49C4A6A31463C4F4003B83CE /* ColourPaletteView.m */,
 			);
 			name = Example;
 			sourceTree = "<group>";
@@ -181,6 +194,8 @@
 		49FB05B31462914700CB0BA6 = {
 			isa = PBXGroup;
 			children = (
+				490F4F3F1462B814002DEF66 /* colourLoversIcon-114x114.png */,
+				490F4F3D1462B80E002DEF66 /* colourLoversIcon-57x57.png */,
 				490F4F03146298E1002DEF66 /* QuartzCore.framework */,
 				49FB05C81462914700CB0BA6 /* Colourlovers */,
 				49FB05C11462914700CB0BA6 /* Frameworks */,
@@ -216,10 +231,6 @@
 				490F4EF514629882002DEF66 /* DCIntrospect */,
 				49FB05D11462914700CB0BA6 /* AppDelegate.h */,
 				49FB05D21462914700CB0BA6 /* AppDelegate.m */,
-				490F4EEE14629312002DEF66 /* ColoursTableVc.h */,
-				490F4EEF14629312002DEF66 /* ColoursTableVc.m */,
-				490F4EF214629502002DEF66 /* ColourPaletteCell.h */,
-				490F4EF314629502002DEF66 /* ColourPaletteCell.m */,
 				49FB05C91462914700CB0BA6 /* Supporting Files */,
 			);
 			path = Colourlovers;
@@ -287,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49FB05CD1462914700CB0BA6 /* InfoPlist.strings in Resources */,
+				490F4F3E1462B80F002DEF66 /* colourLoversIcon-57x57.png in Resources */,
+				490F4F401462B814002DEF66 /* colourLoversIcon-114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +331,7 @@
 				490F4F2B14629F84002DEF66 /* JSONKit.m in Sources */,
 				490F4F311462A260002DEF66 /* ColourLovers.m in Sources */,
 				490F4F341462A2ED002DEF66 /* ColourPalette.m in Sources */,
+				49C4A6A41463C4F4003B83CE /* ColourPaletteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
     ColoursTableVc* vc = [[ColoursTableVc alloc] initWithStyle:UITableViewStylePlain];
     self.navController = [[UINavigationController alloc] initWithRootViewController:vc];
 
-    // always bet on black (quote wesley snipes)
+    // always bet on black
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
     self.navController.navigationBar.tintColor = [UIColor blackColor];
 

@@ -7,17 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class ColourPalette;
+#import "ColourPaletteView.h"
 
 @interface ColourPaletteCell : UITableViewCell {
-    UILabel* colorLabel;
-    NSMutableArray* colorViews;
+    ColourPaletteView* paletteView;
 }
     
-@property (nonatomic,strong) NSArray* colors;
-@property (nonatomic,strong) NSString* title;
-
 -(void) setPalette:(ColourPalette*)palette;
 
 @end
