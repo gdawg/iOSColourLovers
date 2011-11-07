@@ -2,6 +2,9 @@
 
 ### iOS / Objective C library for interfacing with colourLovers.com
 
+The site at http://www.colourlovers.com hosts a great community of artist colour palettes and more.
+This library allows you to access the colour palettes in an iPhone or iPad app.
+
 ### Dependencies:
 This library depends on networking from the excellent AFNetworking library.
 
