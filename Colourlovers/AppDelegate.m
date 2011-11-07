@@ -3,35 +3,31 @@
 //  Colourlovers
 //
 //  Created by Andrew Griffiths on 3/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Mad Dog Software. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ColoursTableVc.h"
-#import "DCIntrospect.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize navController = _tabBarController;
+@synthesize navController = _navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    // setup a sample list of colours controller
+    // setup a sample list of palettes controller
     ColoursTableVc* vc = [[ColoursTableVc alloc] initWithStyle:UITableViewStylePlain];
     self.navController = [[UINavigationController alloc] initWithRootViewController:vc];
 
-    // always bet on black
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
-    self.navController.navigationBar.tintColor = [UIColor blackColor];
+    self.navController.navigationBar.tintColor = [UIColor grayColor];
 
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
 
-    [[DCIntrospect sharedIntrospector] start];
-    
     return YES;
 }
 

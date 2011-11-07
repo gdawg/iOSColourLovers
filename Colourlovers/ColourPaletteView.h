@@ -3,7 +3,7 @@
 //  Colourlovers
 //
 //  Created by Andrew Griffiths on 4/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Mad Dog Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

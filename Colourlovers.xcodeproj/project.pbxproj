@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		490F4EF014629312002DEF66 /* ColoursTableVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EEF14629312002DEF66 /* ColoursTableVc.m */; };
 		490F4EF414629502002DEF66 /* ColourPaletteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EF314629502002DEF66 /* ColourPaletteCell.m */; };
-		490F4EFF14629882002DEF66 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EF714629882002DEF66 /* DCCrossHairView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		490F4F0014629882002DEF66 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EF914629882002DEF66 /* DCFrameView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		490F4F0114629882002DEF66 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EFB14629882002DEF66 /* DCIntrospect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		490F4F0214629882002DEF66 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4EFE14629882002DEF66 /* DCStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		490F4F04146298E1002DEF66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490F4F03146298E1002DEF66 /* QuartzCore.framework */; };
 		490F4F1B14629ED5002DEF66 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4F0714629ED5002DEF66 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		490F4F1C14629ED5002DEF66 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F4F0914629ED5002DEF66 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -43,15 +39,6 @@
 		490F4EEF14629312002DEF66 /* ColoursTableVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursTableVc.m; sourceTree = "<group>"; };
 		490F4EF214629502002DEF66 /* ColourPaletteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourPaletteCell.h; sourceTree = "<group>"; };
 		490F4EF314629502002DEF66 /* ColourPaletteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourPaletteCell.m; sourceTree = "<group>"; };
-		490F4EF614629882002DEF66 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
-		490F4EF714629882002DEF66 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
-		490F4EF814629882002DEF66 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
-		490F4EF914629882002DEF66 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
-		490F4EFA14629882002DEF66 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
-		490F4EFB14629882002DEF66 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
-		490F4EFC14629882002DEF66 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
-		490F4EFD14629882002DEF66 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
-		490F4EFE14629882002DEF66 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
 		490F4F03146298E1002DEF66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		490F4F0614629ED5002DEF66 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		490F4F0714629ED5002DEF66 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
@@ -111,23 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		490F4EF514629882002DEF66 /* DCIntrospect */ = {
-			isa = PBXGroup;
-			children = (
-				490F4EF614629882002DEF66 /* DCCrossHairView.h */,
-				490F4EF714629882002DEF66 /* DCCrossHairView.m */,
-				490F4EF814629882002DEF66 /* DCFrameView.h */,
-				490F4EF914629882002DEF66 /* DCFrameView.m */,
-				490F4EFA14629882002DEF66 /* DCIntrospect.h */,
-				490F4EFB14629882002DEF66 /* DCIntrospect.m */,
-				490F4EFC14629882002DEF66 /* DCIntrospectSettings.h */,
-				490F4EFD14629882002DEF66 /* DCStatusBarOverlay.h */,
-				490F4EFE14629882002DEF66 /* DCStatusBarOverlay.m */,
-			);
-			name = DCIntrospect;
-			path = "../../Third Party Apps/DCIntrospect/DCIntrospect";
-			sourceTree = "<group>";
-		};
 		490F4F0514629ED5002DEF66 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +198,6 @@
 				490F4F2D1462A232002DEF66 /* Example */,
 				490F4F2514629F84002DEF66 /* JSONKit */,
 				490F4F0514629ED5002DEF66 /* AFNetworking */,
-				490F4EF514629882002DEF66 /* DCIntrospect */,
 				49FB05D11462914700CB0BA6 /* AppDelegate.h */,
 				49FB05D21462914700CB0BA6 /* AppDelegate.m */,
 				49FB05C91462914700CB0BA6 /* Supporting Files */,
@@ -314,10 +283,6 @@
 				49FB05D31462914700CB0BA6 /* AppDelegate.m in Sources */,
 				490F4EF014629312002DEF66 /* ColoursTableVc.m in Sources */,
 				490F4EF414629502002DEF66 /* ColourPaletteCell.m in Sources */,
-				490F4EFF14629882002DEF66 /* DCCrossHairView.m in Sources */,
-				490F4F0014629882002DEF66 /* DCFrameView.m in Sources */,
-				490F4F0114629882002DEF66 /* DCIntrospect.m in Sources */,
-				490F4F0214629882002DEF66 /* DCStatusBarOverlay.m in Sources */,
 				490F4F1B14629ED5002DEF66 /* AFHTTPClient.m in Sources */,
 				490F4F1C14629ED5002DEF66 /* AFHTTPRequestOperation.m in Sources */,
 				490F4F1D14629ED5002DEF66 /* AFImageCache.m in Sources */,

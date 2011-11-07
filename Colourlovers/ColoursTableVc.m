@@ -3,7 +3,7 @@
 //  Colourlovers
 //
 //  Created by Andrew Griffiths on 3/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Mad Dog Software. All rights reserved.
 //
 
 #import "ColoursTableVc.h"
@@ -19,7 +19,7 @@
     self = [super initWithStyle:style];
     if (self) {
         self.tableView.allowsSelection = NO;
-        self.title = @"thx to colourlovers.com";
+        self.title = @"Palettes";
         self.palettes = nil;
     }
     return self;
@@ -46,6 +46,18 @@
     */
 
     // there's also more specialised methods to do paged loads, newest etc.
+    
+    // setup a nice view to mention colourlovers.com to give them some props
+    UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 28.0)];
+    view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+    UILabel* label = [[UILabel alloc] initWithFrame:view.frame];
+    label.font = [UIFont boldSystemFontOfSize:14.0];
+    label.textColor = [UIColor colorWithWhite:0.45 alpha:1.0];
+    label.backgroundColor = [UIColor clearColor];
+    label.text = @"thanks to colourlovers.com";
+    label.textAlignment = UITextAlignmentCenter;
+    [view addSubview:label];
+    self.tableView.tableHeaderView = view;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
