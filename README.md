@@ -5,6 +5,9 @@
 The site at http://www.colourlovers.com hosts a great community of artist colour palettes and more.
 This library allows you to access the colour palettes in an iPhone or iPad app.
 
+Please note that the ColourLovers API is available for non commercial products. They may have a 
+commercial api available shortly.
+
 ### Dependencies:
 This library depends on networking from the excellent AFNetworking library.
 
